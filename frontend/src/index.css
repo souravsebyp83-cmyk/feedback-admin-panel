@@ -1,0 +1,282 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f2;
+  color: #242820;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+}
+
+header {
+  padding: 18px 7%;
+  border-bottom: 1px solid #d8d9cf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #242820;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: #596451;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #b44b32;
+}
+
+main {
+  width: 86%;
+  max-width: 1150px;
+  margin: 42px auto;
+}
+
+h1 {
+  font-size: 29px;
+  letter-spacing: -1.5px;
+  margin-bottom: 8px;
+}
+
+h2, h3 {
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.muted {
+  color: #85877c;
+  font-size: 12px;
+}
+
+.stats {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid #d8d9cf;
+  border-bottom: 1px solid #d8d9cf;
+  margin: 30px 0;
+}
+
+.stats div {
+  flex: 1;
+  padding: 17px 15px;
+  border-right: 1px solid #d8d9cf;
+}
+
+.stats div:first-child {
+  padding-left: 0;
+}
+
+.stats div:last-child {
+  border: 0;
+}
+
+.stats span,
+.stats strong {
+  display: block;
+}
+
+.stats span {
+  color: #85877c;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.stats strong {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+input, select, textarea, button {
+  font: inherit;
+  border-radius: 0;
+}
+
+input, select, textarea {
+  padding: 11px;
+  border: 1px solid #d8d9cf;
+  background: transparent;
+  color: #242820;
+}
+
+input {
+  width: 260px;
+  max-width: 100%;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+button {
+  border: 1px solid #242820;
+  background: #242820;
+  color: #f7f7f2;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b44b32;
+  border-color: #b44b32;
+}
+
+button.delete {
+  background: transparent;
+  color: #b44b32;
+  border-color: #d8d9cf;
+}
+
+button.delete:hover {
+  color: white;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  color: #85877c;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+th, td {
+  border-bottom: 1px solid #d8d9cf;
+  padding: 14px 10px;
+  vertical-align: top;
+}
+
+td:first-child, th:first-child {
+  padding-left: 0;
+}
+
+td {
+  line-height: 1.5;
+}
+
+.comment {
+  min-width: 160px;
+  max-width: 260px;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.actions button {
+  padding: 6px 8px;
+  margin-bottom: 4px;
+}
+
+.empty {
+  padding: 20px 0;
+}
+
+.footnote {
+  color: #85877c;
+  font-size: 11px;
+  margin-top: 25px;
+}
+
+.error {
+  color: #b44b32;
+  border-left: 3px solid #b44b32;
+  padding: 9px 12px;
+}
+
+.form-page {
+  max-width: 600px;
+}
+
+form {
+  margin-top: 25px;
+  max-width: 550px;
+}
+
+label {
+  display: block;
+  margin: 22px 0 8px;
+}
+
+form select,
+form textarea {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+button.plain {
+  color: #242820;
+  background: transparent;
+  border-color: #d8d9cf;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 16px 5%;
+  }
+
+  main {
+    width: 90%;
+    margin: 28px auto;
+  }
+
+  .stats strong {
+    font-size: 20px;
+  }
+
+  .stats div {
+    padding: 14px 8px;
+  }
+
+  .tools {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .table-wrap table {
+    min-width: 760px;
+  }
+}
